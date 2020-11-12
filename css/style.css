@@ -1,0 +1,167 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.025em;
+    background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: underline;
+}
+
+#logo {
+    width: 66%;
+}
+
+.splash {
+    justify-content: space-between;
+}
+
+main, #logged-in {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+#logged-in {
+    overflow: hidden;
+}
+
+.welcome {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%), url('../images/bg1.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    margin: 0 -20px;
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
+    position: relative;
+}
+.info {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%), url('../images/bg2.jpg');
+    background-size: cover;
+    background-position: center top;
+    margin: 0 -20px;
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
+    position: relative;
+}
+
+#logged-in nav .active {
+    color: orange;
+    text-decoration: none;
+    border-top: 1px solid orange;
+}
+
+#logged-in .nav-link {
+    background-color: black;
+    color: #999;
+    text-decoration: none;
+    margin: .25em;
+}
+
+.card-shadow {
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
+}
+
+#logged-in main {
+    overflow-y: scroll;
+}
+
+#logged-in {
+    height: 100vh;
+}
+
+.limit {
+    width: 100%;
+    max-width: 700px;
+    padding: 10vw;
+    margin: 0 auto;
+}
+
+#logged-in .limit {
+    width: 100%;
+    max-width: 700px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#logged-in #conteudo {
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+input[type="submit"], input[type="button"] {
+    background-color: purple;
+    color: white;
+}
+
+#fullscreen { 
+    min-height: 50vh;
+}
+
+@media only screen and (max-width: 475px) {
+    #fullscreen { 
+        min-height: 90vh;
+        justify-content: center;
+    }
+}
+
+#link-cadastro, .small {
+    font-size: 0.9em;
+}
+
+#logged-in main {
+    height: 92vh;
+}
+#logged-in footer {
+    height: 8vh;
+}
+
+footer {
+    background-color: #333;
+}
+footer ul, #lojaHome {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer li {
+    font-size: 0.66em;
+    text-align: center;
+    padding: 1em;
+}
+
+#lojaHome {
+    flex-wrap: wrap;
+}
+#lojaHome li {
+    min-width: 25%;
+    flex: 1;
+    flex-shrink: 1;
+    padding: .5em;
+}
+
+footer span {
+    margin: .5em auto;
+    width: 2em;
+    height: auto;
+    display: block;
+    fill: white;
+}
+
+footer a, footer a:hover, footer a:active {
+    color: #DDD;
+    text-decoration: none;
+}
